@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Propiedades - NExo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="/buscar" method="post" class="search-form">
+            <div class="form-group">
+                <label for="precio" class="label">Precio deseado:</label>
+                <input type="number" name="precio" id="precio" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="habitaciones" class="label">Número de habitaciones:</label>
+                <input type="number" name="habitaciones" id="habitaciones" class="input" required>
+            </div>
+            <div class="form-group">
+                <label for="banios" class="label">Número de baños:</label>
+                <input type="number" name="banios" id="banios" class="input" required>
+            </div>
+         
+            <div class="form-group">
+                <label for="pisos" class="label">Número de pisos:</label>
+                <input type="number" name="pisos" id="pisos" class="input" required>
+            </div> 
+            <div class="form-group">
+                <label for="estado " class="label">Estado:</label>
+                <input type="text" id="estado"  class="input" name="estado" required>
+            </div>
+            <button type="submit" class="btn">Buscar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Blanco */
+    color: #000; /* Negro */
+    background-image: url(https://www.grupocaral.com.pe/wp-content/uploads/2019/08/grupo-caral-feria-inmobiliaria-nexo-2019-mobil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #094297; /* Naranjo claro */
+}
+
+.search-form {
+    background-color: #ffffffec;
+    padding: 30px;
+    border-radius: 20px ;
+    box-shadow: 10px 10px 5px  rgba(255, 223, 154, 0.993);
+    margin: 2rem;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #094297; /* Naranjo claro */
+}
+
+.input {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #555555fa;
+    border-radius: 10px ;
+    background-color: #44444404;
+    color: #000000;
+    font-size: 1.1rem;
+    height: 40px;
+}
+
+.btn {
+    background-color: #ffffff; /* Naranjo oscuro al hacer hover */
+    color: #094297; /* Naranjo claro */
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 2px 1px 1px 1px #094297;
+}
+
+.btn:hover {
+    background-color: #ff9800; /* Naranjo claro */
+    color: white;
+    transition: background-color 0.3s ease;
+
+}
+
+</style>
